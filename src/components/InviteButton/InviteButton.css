@@ -1,0 +1,13 @@
+.Invite-btn {
+    padding: 15px 40px;
+    background-color: red;
+    border-radius: 20px;
+    border: none;
+    background: linear-gradient(90deg, var(--primary-lime-green), var(--primary-cyan));
+    color: var(--white);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.Invite-btn:hover {
+    transform: scale(1.1)
+}

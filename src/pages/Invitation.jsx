@@ -11,10 +11,12 @@ function Invitation() {
   });
   const handleSubmit = () => {};
   const handleChange = (event) => {
-    const eventTargetValue = event.target.value;
-    const eventTarget = event.target.id;
+    const { name, value } = event.target;
 
-    return setFormData({...formData, [eventTarget]: eventTargetValue});
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
   };
   return (
     <form action="" onSubmit={handleSubmit}>
@@ -23,6 +25,7 @@ function Invitation() {
         <input
           type="text"
           placeholder="First name"
+          name="firstName"
           id="firstName"
           value={formData.firstName}
           onChange={handleChange}
@@ -33,6 +36,7 @@ function Invitation() {
         <input
           type="text"
           placeholder="Last name"
+          name="lastName"
           id="lastName"
           value={formData.lastName}
           onChange={handleChange}
@@ -43,6 +47,7 @@ function Invitation() {
         <input
           type="email"
           placeholder="Email"
+          name="email"
           id="email"
           value={formData.email}
           onChange={handleChange}
@@ -53,6 +58,7 @@ function Invitation() {
         <input
           type="tel"
           placeholder="Phone Number"
+          name="phone"
           id="phone"
           value={formData.phone}
           onChange={handleChange}
@@ -61,8 +67,8 @@ function Invitation() {
       <div className="form-input-container">
         <label htmlFor="notes">Notes</label>
         <textarea
-          name="notes"
           id="notes"
+          name="notes"
           value={formData.notes}
           onChange={handleChange}
           cols={100}

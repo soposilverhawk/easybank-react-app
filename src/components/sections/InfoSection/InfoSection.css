@@ -1,0 +1,31 @@
+.info-section-container {
+    height: 800px;
+    width: 102%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    padding-left: 100px;
+}
+.info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 80%;
+}
+h1 {
+    font-size: 46px;
+}
+.info-hero {
+    position: relative;
+}
+.info-hero-bg {
+    position: absolute;
+    top: -15rem;
+    right: -20rem;
+}
+.info-hero-img {
+    position: relative;
+    top: -8rem;
+    z-index: 9999;
+}

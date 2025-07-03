@@ -1,8 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./InviteButton.css";
 
 function InviteButton() {
-  return <button className="Invite-btn">Request Invite</button>;
+  const navigate = useNavigate();
+  return <button className="Invite-btn" onClick={() => navigate("/invitation")}>Request Invite</button>;
 }
 
 export default InviteButton;

@@ -1,7 +1,22 @@
 .header-nav {
-    display: flex;
-    gap: 40px;
+  display: flex;
+  gap: 40px;
 }
 a {
-    color: var(--neutral-blue)
+  color: var(--neutral-blue);
+  position: relative;
+  padding-bottom: 5px;
+}
+a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  border-bottom: 1px solid var(--neutral-blue);
+  transition: width 0.3s ease;
+}
+a:hover::after {
+  width: 100%;
 }

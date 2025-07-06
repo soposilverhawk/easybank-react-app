@@ -13,7 +13,7 @@ function EasyBankBenefits() {
         <p>
           We leverage Open Banking to turn your bank account info your financial
           hub. <br />
-          Control your finances like never before
+          Control your financies like never before
         </p>
       </div>
       <div

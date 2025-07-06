@@ -1,5 +1,5 @@
 import React from "react";
-import InviteButton from "../../InviteButton/InviteButton";
+import InviteButton from "../../Shared/InviteButton/InviteButton"
 import infoHero from "../../../assets/images/image-mockups.png";
 import infoDesktopBg from "../../../assets/images/bg-intro-desktop.svg";
 import "./InfoSection.css";

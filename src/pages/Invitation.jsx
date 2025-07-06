@@ -95,7 +95,7 @@ function Invitation() {
       </form>
       {isSubmitted && (
         <div className="form-msg">
-          Your details have been submitted. We will reach out to you at{" "}
+          Your details have been submitted. We will reach out to you at
           {submittedData.email}
         </div>
       )}

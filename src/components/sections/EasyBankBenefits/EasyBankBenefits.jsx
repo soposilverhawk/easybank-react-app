@@ -4,6 +4,7 @@ import onlineBankingIcon from "../../../assets/images/icon-online.svg";
 import budgetingIcon from "../../../assets/images/icon-budgeting.svg";
 import onboardingIcon from "../../../assets/images/icon-onboarding.svg";
 import apiIcon from "../../../assets/images/icon-api.svg";
+import "./EasyBankBenefits.css";
 
 function EasyBankBenefits() {
   return (
@@ -18,7 +19,6 @@ function EasyBankBenefits() {
       </div>
       <div
         style={{
-          backgroundColor: "yellow",
           display: "flex",
           justifyContent: "space-around",
         }}

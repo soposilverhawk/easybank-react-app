@@ -1,7 +1,17 @@
 .Easybank-benefits {
-    width: 1000px;
-    height: 1000px;
+    background-color: var(--neutral-light-blue);
+    height: 500px;
     display: flex;
-    
-    background-color: red;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.benefits-header {
+    padding-left: 100px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+h2 {
+    font-size: 40px;
 }
